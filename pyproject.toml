@@ -14,9 +14,10 @@ jupyter-bokeh = "^3.0.4"
 voila = "^0.3.5"
 ipykernel = "^6.15.1"
 platformdirs = "^2.5.2"
+humanize = "^4.2.3"
 
 [tool.poetry.dev-dependencies]
-black = "^22.6.0"
+black = {extras = ["jupyter"], version = "^22.6.0"}
 pylama = "^8.3.8"
 
 [build-system]
