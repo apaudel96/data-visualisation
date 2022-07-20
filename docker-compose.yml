@@ -1,6 +1,7 @@
 version: '3'
 services:
   panel:
+    restart: always
     build: .
     expose:
       - ${PORT}
