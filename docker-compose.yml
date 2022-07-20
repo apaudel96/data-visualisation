@@ -4,8 +4,6 @@ services:
     build: .
     expose:
       - ${PORT}
-    ports:
-      - ${PORT}:${PORT}
     command: "poetry run panel serve sales.py --port ${PORT}"
     environment:
       - VIRTUAL_HOST=${HOST}
