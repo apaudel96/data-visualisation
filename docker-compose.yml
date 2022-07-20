@@ -6,7 +6,8 @@ services:
       - ${PORT}
     command: "poetry run panel serve sales.py --port ${PORT}"
     environment:
-      - VIRTUAL_HOST=panel.apaudel.com
+      - VIRTUAL_HOST=${HOST}
+      - BOKEH_ALLOW_WS_ORIGIN=${HOST}
     networks:
       - backend
 networks:
