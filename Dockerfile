@@ -19,6 +19,6 @@ FROM python:3.10-alpine
 RUN adduser --disabled-password app
 USER app
 WORKDIR /app
-COPY --from=builder $HOME/.local $HOME/.local
+COPY --from=builder root/.local .
 RUN export PATH=$PATH:$HOME/.local/bin
 COPY . .
