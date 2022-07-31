@@ -20,5 +20,5 @@ RUN adduser --disabled-password app
 USER app
 WORKDIR /app
 COPY --from=builder root/.local .
-RUN export PATH=$PATH:$HOME/.local/bin
+RUN export PATH=$PATH:/home/app/.local/bin
 COPY . .
