@@ -7,10 +7,13 @@ services:
       - ${PORT}
     command: "poetry run panel serve sales.py --port ${PORT}"
     environment:
-      - VIRTUAL_HOST=${HOST}
       - BOKEH_ALLOW_WS_ORIGIN=${HOST}
-    networks:
-      - backend
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.link_shortener.rule=Host("link.apaudel.com")
+      - traefik.http.routers.link_shortener.entrypoints=websecure,web
+      - traefik.http.routers.link_shortener.tls.certresolver=myresolver
+
 networks:
-  backend:
-    external: true
+  default:
+    name: backend
