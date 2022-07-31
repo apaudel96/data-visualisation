@@ -10,9 +10,9 @@ services:
       - BOKEH_ALLOW_WS_ORIGIN=${HOST}
     labels:
       - traefik.enable=true
-      - traefik.http.routers.link_shortener.rule=Host("link.apaudel.com")
-      - traefik.http.routers.link_shortener.entrypoints=websecure,web
-      - traefik.http.routers.link_shortener.tls.certresolver=myresolver
+      - traefik.http.routers.panel.rule=Host("panel.apaudel.com")
+      - traefik.http.routers.panel.entrypoints=websecure,web
+      - traefik.http.routers.panel.tls.certresolver=myresolver
 
 networks:
   default:
