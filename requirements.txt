@@ -158,6 +158,9 @@ executing==0.8.3; python_version >= "3.8" \
 fastjsonschema==2.16.1; python_full_version >= "3.7.0" and python_version >= "3.7" \
     --hash=sha256:2f7158c4de792555753d6c2277d6a2af2d406dfd97aeca21d17173561ede4fe6 \
     --hash=sha256:d6fa3ffbe719768d70e298b9fb847484e2bdfdb7241ed052b8d57a9294a8c334
+humanize==4.2.3; python_version >= "3.7" \
+    --hash=sha256:bed628920d45cd5018abb095710f0c03a8336d6ac0790e7647c6a328f3880b81 \
+    --hash=sha256:2bc1fdd831cd00557d3010abdd84d3e41b4a96703a3eaf6c24ee290b26b75a44
 idna==3.3; python_version >= "3.7" and python_version < "4" and python_full_version >= "3.6.2" \
     --hash=sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff \
     --hash=sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d

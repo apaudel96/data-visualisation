@@ -5,7 +5,15 @@ services:
     build: .
     expose:
       - ${PORT}
-    command: "poetry run panel serve sales.py --port ${PORT}"
+    # command: "poetry run panel serve sales.py --port ${PORT}"
+    command:
+      [
+        "/app/venv/bin/panel",
+        "serve",
+        "sales.py",
+        "--port",
+        "${PORT}"
+      ]
     environment:
       - BOKEH_ALLOW_WS_ORIGIN=${HOST}
     labels:
