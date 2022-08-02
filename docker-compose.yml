@@ -5,10 +5,8 @@ services:
     build: .
     expose:
       - ${PORT}
-    # command: "poetry run panel serve sales.py --port ${PORT}"
-    command: [ "panel", "serve", "sales.py", "--port", "${PORT}" ]
-    environment:
-      - BOKEH_ALLOW_WS_ORIGIN=${HOST}
+    env_file:
+      - .env
     labels:
       - traefik.enable=true
       - traefik.http.routers.panel.rule=Host("panel.apaudel.com")
