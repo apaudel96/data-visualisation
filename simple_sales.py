@@ -11,8 +11,7 @@ pn.extension(sizing_mode="stretch_width")
 # sns.set()
 
 template = pn.template.FastListTemplate(
-    site="Sales",
-    title="Sales",
+    title="Simple Sales Dashboard",
 )
 
 #####################################################
