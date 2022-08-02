@@ -5,4 +5,4 @@ COPY pyproject.toml .
 COPY pdm.lock .
 RUN pdm install
 COPY . .
-CMD [ "pdm", "run", "panel", "serve", "sales.py", "--port", "${PORT}" ]
+CMD [ "pdm", "run", "panel", "serve", "sales.py", "simple_sales.py", "--port", "${PORT}" ]
