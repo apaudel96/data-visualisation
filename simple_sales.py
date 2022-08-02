@@ -1,5 +1,3 @@
-from itertools import groupby
-from numpy import size
 import panel as pn
 import pandas as pd
 
