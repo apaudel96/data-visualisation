@@ -10,7 +10,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.panel.rule=Host("panel.paudel.me")
-      - traefik.http.routers.panel.entrypoints=websecure,web
+      - traefik.http.routers.panel.entrypoints=websecure
       - traefik.http.routers.panel.tls.certresolver=certbot
 
 networks:
