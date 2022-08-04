@@ -8,9 +8,10 @@ services:
     env_file:
       - .env
     labels:
-      - traefik.http.routers.panel.rule=Host("panel.apaudel.com")
-#      - traefik.http.routers.panel.entrypoints=websecure,web
-#      - traefik.http.routers.panel.tls.certresolver=certbot
+      - traefik.enable=true
+      - traefik.http.routers.panel.rule=Host("panel.paudel.me")
+      - traefik.http.routers.panel.entrypoints=websecure,web
+      - traefik.http.routers.panel.tls.certresolver=certbot
 
 networks:
   default:
