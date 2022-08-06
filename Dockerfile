@@ -3,7 +3,7 @@ WORKDIR /app
 RUN pip install pipenv
 COPY Pipfile .
 COPY Pipfile.lock .
-RUN pipenv install --system --deploy
+RUN pipenv install --system --deploy --ignore-pipfile
 COPY . .
 ENV BOKEH_WEBSOCKET_ORIGIN=panel.paudel.me
-CMD ["panel", "serve", "sales.py", "simple_sales.py", "--port", ${PORT} ]
+CMD ["panel", "serve", "sales.py", "simple_sales.py"]
