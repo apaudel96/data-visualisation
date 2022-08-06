@@ -8,6 +8,7 @@ pandas = "*"
 panel = "*"
 plotly = "*"
 bokeh = "*"
+humanize = "*"
 
 [dev-packages]
 
