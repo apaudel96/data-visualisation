@@ -9,6 +9,7 @@ panel = "*"
 plotly = "*"
 bokeh = "*"
 humanize = "*"
+openpyxl = "*"
 
 [dev-packages]
 
