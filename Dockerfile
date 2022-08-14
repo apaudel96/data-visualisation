@@ -1,5 +1,4 @@
 FROM python:3.10-slim
-ENV BOKEH_WEBSOCKET_ORIGIN=panel.paudel.me
 WORKDIR /app
 RUN pip install pipenv
 COPY Pipfile .
